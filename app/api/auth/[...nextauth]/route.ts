@@ -57,6 +57,16 @@ export const authOptions: NextAuthOptions = {
         { name: "Savings/MMF (Etica)", sortOrder: 4 },
         { name: "Rent", sortOrder: 5 },
         { name: "Utilities", sortOrder: 6 },
+        { name: "Airtime", sortOrder: 7 },
+        { name: "Data Bundles", sortOrder: 8 },
+        { name: "Grooming", sortOrder: 9 },
+        { name: "New Clothes", sortOrder: 10 },
+        { name: "Snacks/Sweets", sortOrder: 11 },
+        { name: "Debts", sortOrder: 12 },
+        { name: "Enjoyment/Bash", sortOrder: 13 },
+        { name: "Takeouts", sortOrder: 14 },
+        { name: "Dates", sortOrder: 15 },
+        { name: "Big Boy/Girl Purchases", sortOrder: 16 },
       ];
       await prisma.category.createMany({
         data: defaults.map((c) => ({
