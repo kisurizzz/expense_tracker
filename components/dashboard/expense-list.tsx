@@ -67,11 +67,11 @@ export function ExpenseList({ month, year }: ExpenseListProps) {
         byCategory.set(key, { categoryName: name, total: amt, expenses: [e] });
       }
     }
-    for (const g of byCategory.values()) {
+    Array.from(byCategory.values()).forEach((g) => {
       g.expenses.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );
-    }
+    });
     return Array.from(byCategory.entries())
       .map(([id, g]) => ({ id, ...g }))
       .sort((a, b) => b.total - a.total);

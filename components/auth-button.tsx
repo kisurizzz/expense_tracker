@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { signIn, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,9 +23,11 @@ export function AuthButton({ session }: AuthButtonProps) {
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="sm" className="gap-2">
             {session.user.image ? (
-              <img
+              <Image
                 src={session.user.image}
                 alt=""
+                width={20}
+                height={20}
                 className="h-5 w-5 rounded-full"
               />
             ) : (

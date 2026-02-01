@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AnalyticsSummary } from "./analytics-summary";
 import { SalaryCard } from "./salary-card";
 import { ExpenseForm } from "./expense-form";
