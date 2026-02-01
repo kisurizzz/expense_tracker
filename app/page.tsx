@@ -14,7 +14,7 @@ export default async function HomePage() {
       <div className="w-full max-w-md space-y-8 text-center">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Suri's Expense Tracker
+            {"Suri's Expense Tracker"}
           </h1>
           <p className="mt-2 text-muted-foreground">
             Track your salary and expenses in Kenyan Shillings (KES). Set a
