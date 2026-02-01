@@ -26,7 +26,7 @@ export function DashboardClient() {
       <div className="mx-auto max-w-4xl space-y-6 px-4 py-6 sm:px-6 lg:px-8">
         <header className="flex flex-wrap items-center justify-between gap-4">
           <h1 className="text-2xl font-bold text-foreground sm:text-3xl">
-            Expense Tracker
+            Suri's Expense Tracker
           </h1>
           <div className="flex flex-wrap items-center gap-3">
             <select
