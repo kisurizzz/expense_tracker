@@ -1,8 +1,7 @@
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { SignInButton } from "@/components/sign-in-button";
 
 export default async function HomePage() {
   const session = await getServerSession(authOptions);
@@ -24,11 +23,7 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-          <Button asChild size="lg" className="gap-2">
-            <Link href="/api/auth/signin">
-              Sign in with Google
-            </Link>
-          </Button>
+          <SignInButton />
         </div>
         <p className="text-xs text-muted-foreground">
           Your data is private and isolated to your account.
